@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/padre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleProductoClasicoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comp_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar"/>
+
+            <TextView
+                android:id="@+id/idNombreP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="PLATANO"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/idImagenP"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="DESCRIPCION:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descripcionP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="XZCZXCZXCXCCCCCCCCCCCCCCCCCCCCCXCXCXCXCXCVCCCCCCDSDS"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="PRECIO:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idPrecioP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="48.90"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idMedidaP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="left"
+                    android:paddingStart="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="kg"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/med"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="AGRICULTOR:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idAgricultor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="left"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="LUIS CAMPOS"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/st"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:text="CANTIDAD DISPONIBLE:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/idStockP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="left"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="50"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/idMedida2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:gravity="left"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Kg"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/stock_prod_aumentar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="stock"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/iclayers"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Ingrese cantidad a comprar"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+
+            <Button
+                android:id="@+id/idAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_main"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="      AGREGAR     "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/comen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="COMENTARIOS"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/descripcion_prod"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_imput"
+                android:ems="10"
+                android:hint="Ingrese el comentario"
+                android:inputType="textMultiLine"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/idComentar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_main"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="    COMENTAR   "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!--<androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerComentario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />-->
+
+
+            <ListView
+                android:id="@+id/LstComentario"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:dividerHeight="1px"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="7dp"
+                android:nestedScrollingEnabled="true" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

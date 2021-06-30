@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeClasicoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comp_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/green"
+        android:padding="5dp">
+
+        <ViewFlipper
+            android:id="@+id/vFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></ViewFlipper>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:id="@+id/idProductosClasi"
+                android:background="@drawable/phy_bg"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idProductosClasix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Productos"
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Elige que comprar          "
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/vegetales" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:background="@drawable/che_bg"
+                android:id="@+id/idMisCompras"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/idMisComprasx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mis Compras"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimarys"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visualiza tus compras    "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorPrimarys"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="8dp"
+                    android:src="@drawable/compras"
+                    android:layout_marginLeft="50dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bio_bg"
+                android:layout_marginTop="5dp"
+                android:id="@+id/idCarrito"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/idCarritox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mi Carrito"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimarys"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Realizar compra              "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorPrimarys"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="8dp"
+                    android:src="@drawable/carrito"
+                    android:layout_marginLeft="50dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:id="@+id/idMicuentaClasi"
+                android:background="@drawable/geog_bg"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idMicuentaClasix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Mi Cuenta"
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tus datos personales      "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorPrimarys"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="8dp"
+                    android:src="@drawable/micuenta"
+                    android:layout_marginLeft="50dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:id="@+id/idNosotros"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/math_bg"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idNosotrosx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="NOSOTROS"
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Acerca de nuestra empresa   "
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="55dp"
+                    android:padding="8dp"
+                    android:src="@drawable/grupo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:id="@+id/idCerrarClasi"
+                android:background="@drawable/math_bg"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/idCerrarClasix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cerrar"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimarys"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nos vemos pronto           "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorPrimarys"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="8dp"
+                    android:src="@drawable/adios"
+                    android:layout_marginLeft="50dp"/>
+            </LinearLayout>
+            <!--<Spinner
+                android:id="@+id/sp_correosClasico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>-->
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

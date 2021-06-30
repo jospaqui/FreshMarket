@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoClasicoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comp_bg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="116dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/toolbar"/>
+            <!--<ListView
+                android:id="@+id/lstComprar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/> -->
+            <!-- android:nestedScrollingEnabled="false" -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerComprar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETALLE DE ENTREGA:"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+
+
+            <Spinner
+                android:id="@+id/spinner_depa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_imput"
+                android:entries="@array/Region"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.0" />
+            <Spinner
+                android:id="@+id/spinner_provincia"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_imput"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.0"/>
+
+            <EditText
+                android:id="@+id/etUserDireccion_agri"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="direccion"
+
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_location"
+                android:ems="10"
+                android:hint="@string/et_direccion"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="30dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="MONTO TOTAL:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="right"/>
+                <TextView
+                    android:id="@+id/s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="S/ "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="right"/>
+
+
+                <TextView
+                    android:id="@+id/idMontoTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    tools:text="100"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/de"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="30dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="COSTO DELIVERY:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:id="@+id/s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="S/ "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="right"/>
+
+
+                <TextView
+                    android:id="@+id/idDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    tools:text="5"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="30dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="MONTO FINAL:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="right"/>
+                <TextView
+                    android:id="@+id/s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="S/ "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="right"/>
+
+
+                <TextView
+                    android:id="@+id/idMontoFinal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    tools:text="105"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_comprar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_main"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="COMPRAR"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

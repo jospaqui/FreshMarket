@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comp_bg"
+    tools:context=".LoginActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar2" />
+
+    <TextView
+        android:id="@+id/textViewreg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-34dp" />
+
+    <TextView
+        android:id="@+id/contucorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="center|start"
+        android:text="@string/concorreo"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/et_userMail_general"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_imput"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="12dp"
+        android:autofillHints="email"
+        android:ems="10"
+        android:hint="@string/et_email_login"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
+
+    <EditText
+        android:id="@+id/et_userPassword_general"
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_imput"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/et_pass_login"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:autofillHints="password"
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toBottomOf="@+id/et_userMail_general" />
+
+    <Button
+        android:id="@+id/btn_iniciar_sesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_main"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toBottomOf="@+id/et_userPassword_general" />
+
+    <TextView
+        android:id="@+id/et_regresar_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="@string/sincuenta"
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar_sesion" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="192dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="28dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/logopl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

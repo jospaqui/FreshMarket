@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AumentarProductoAgricultorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comp_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/toolbar"/>
+
+            <TextView
+                android:id="@+id/enunsolopaso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/titleaddproduct"
+                android:textColor="#000000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/contucorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/subtitleaddproduct"
+                android:textColor="#655D5D"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_prod"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_imput"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="30dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="Stock actual:"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+            <TextView
+                android:id="@+id/idstock_actual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                tools:text="15"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/idstock_actual_medida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                tools:text="Kg"
+                android:textSize="22sp" />
+
+
+
+        </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/stock_prod_aumentar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="stock"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/iclayers"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/a_adir_cantidad_de_stock"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/nsd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="30dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="5dp"
+                    android:text="Stock Final:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:gravity="right"/>
+                <TextView
+                    android:id="@+id/idstock_final"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    tools:text="15"
+                    android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/idstock_final_medida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    tools:text="Kg"
+                    android:textSize="22sp" />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_aumentar_prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_main"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/btn_AddProduct"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

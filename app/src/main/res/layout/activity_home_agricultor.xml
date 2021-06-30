@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeAgricultorActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comp_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/green"
+        android:padding="5dp">
+
+        <ViewFlipper
+            android:id="@+id/vFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></ViewFlipper>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="66dp"
+                android:id="@+id/idAgregarProducto"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/geog_bg"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idAgregarProductox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Agregar Producto"
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Agrege tus Productos       "
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="60dp"
+                    android:padding="8dp"
+                    android:src="@drawable/anadir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="66dp"
+                android:orientation="horizontal"
+                android:background="@drawable/che_bg"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:id="@+id/idMisProductos"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idMisProductosx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Mis Productos"
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Visualiza tus Productos    "
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="60dp"
+                    android:padding="8dp"
+                    android:src="@drawable/productos" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="66dp"
+                android:orientation="horizontal"
+                android:id="@+id/idMisVentas"
+                android:background="@drawable/bio_bg"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/idMisVentasx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mis Ventas"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimarys"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Que productos vendiste           "
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorPrimarys"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="30dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ventas" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="66dp"
+                android:orientation="horizontal"
+                android:id="@+id/idMisEstadisticasAgri"
+                android:background="@drawable/bio_bg"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/idMisEstadisticasAgrix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mis Estadisticas"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimarys"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Como van tus ganancias           "
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorPrimarys"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="25dp"
+                    android:padding="8dp"
+                    android:src="@drawable/estadistica" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="66dp"
+                android:id="@+id/idMicuentaAgri"
+                android:orientation="horizontal"
+                android:background="@drawable/math_bg"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idMicuentaAgrix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Mi Cuenta"
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tus datos personales      "
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorPrimarys"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="8dp"
+                    android:src="@drawable/micuenta"
+                    android:layout_marginLeft="70dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:id="@+id/idNosotros"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/geog_bg"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idNosotrosx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="NOSOTROS"
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Acerca de nuestra empresa"
+                        android:textColor="@color/colorPrimarys"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="55dp"
+                    android:padding="8dp"
+                    android:src="@drawable/grupo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="66dp"
+                android:id="@+id/idCerrarAgri"
+                android:orientation="horizontal"
+                android:background="@drawable/phy_bg"
+                android:layout_marginTop="6dp"
+                android:padding="3dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/idCerrarAgrix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cerrar"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimarys"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nos vemos pronto            "
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorPrimarys"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="8dp"
+                    android:src="@drawable/adios"
+                    android:layout_marginLeft="70dp"/>
+            </LinearLayout>
+
+
+            <!--<Spinner
+                android:id="@+id/sp_correos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>-->
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

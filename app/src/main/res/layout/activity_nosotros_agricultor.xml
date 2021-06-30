@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NosotrosAgricultorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comp_bg"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+
+
+        <TextView
+            android:id="@+id/enunsolopaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:gravity="center"
+            android:text="Nosotros"
+            android:textColor="#000000"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/misio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="MISION"
+            android:textColor="#E91E63"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Empresa dedicada al sector de la agricultura que busca facilitar las ventas de los agricultores industriales y tradicionales"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/vis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="VISION"
+            android:textColor="#E91E63"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/vision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Ser una empresa destacada en el sector agricultura a nivel internacional con los diferentes recursos tecnologicos que proporcionamos"
+            android:textColor="#000000"
+            android:textSize="17sp"/>
+
+
+        <TextView
+            android:id="@+id/ubi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="UBICACION"
+            android:textColor="#E91E63"
+            android:textSize="20sp" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <!--<include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            layout="@layout/activity_maps"
+            >
+
+        </include>-->
+
+        <!--<fragment
+            android:name="com.example.itm_proyectofinal.MapsActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </fragment>-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

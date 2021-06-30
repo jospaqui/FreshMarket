@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisEstadisticasAgricultorActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ref"
+        android:background="@drawable/comp_bg"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+
+        <TextView
+            android:id="@+id/enunsolopaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:gravity="center"
+            android:text="Mis Estadisticas"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:background="@color/rojo_end"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/rojo_stat"
+                    android:gravity="center"
+                    android:text="CANTIDAD DE"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/rojo_stat"
+                    android:gravity="center"
+
+                    android:text="VENTAS"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idCantidadVentas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/rojo_stat"
+                    android:gravity="center"
+                    tools:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="22dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/math_end"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/math_stat"
+                    android:text="  CANTIDAD DE"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/math_stat"
+                    android:gravity="center"
+                    android:text="PRODUCTOS"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idCantidadProductos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/math_stat"
+                    android:gravity="center"
+                    tools:text="100"
+                    android:textColor="@color/white"
+                    android:textSize="22dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:background="@color/phy_end"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/phy_stat"
+                    android:gravity="center"
+                    android:text="INGRESO"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/phy_stat"
+                    android:gravity="center"
+
+                    android:text="TOTAL"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idIngresoTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/phy_stat"
+                    android:gravity="center"
+                    tools:text="S/200"
+                    android:textColor="@color/white"
+                    android:textSize="22dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/che_end"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/che_stat"
+                    android:gravity="center"
+                    android:text="PRODUCTO STAR"
+                    android:textColor="@color/white"
+                    android:textSize="17dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idNombreProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/che_stat"
+                    android:gravity="center"
+                    tools:text="PLATANO"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idMontoProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/che_stat"
+                    android:gravity="center"
+                    tools:text="S/ 100"
+                    android:textColor="@color/white"
+                    android:textSize="22dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:background="@color/verde_end"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/verde_stat"
+                    android:gravity="center"
+                    android:text="CLIENTE FRECU."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idCliente"
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/verde_stat"
+                    android:gravity="center"
+                    tools:text="RODUIGUEZ JIMENES "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idVeces"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/verde_stat"
+                    android:gravity="center"
+                    tools:text="2 VECES"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/blanco10"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blanco7"
+                    android:text="  CLIENTE STAR"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idNombreCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blanco7"
+                    android:gravity="center"
+                    tools:text="RODRIGUEZ JIMENEZ"
+                    android:textColor="@color/white"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idMontoCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blanco7"
+                    android:gravity="center"
+                    tools:text="S/25.4"
+                    android:textColor="@color/white"
+                    android:textSize="22dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/math_end"
+            android:text="CANTIDADxPRODUCTOS VENDIDOS"
+            android:textSize="22dp"/>
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/chart"
+            android:background="@drawable/math_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

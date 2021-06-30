@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">FreshMarket</string>
+    <string name="descrip_app">Salva la tierra, consume productos orgánicos del campo</string>
+    <string name="descrip_slogan">Refresca tu vida, come orgánico</string>
+    <string name="btn_register_intro">Empieza gratis</string>
+    <string name="btn_login_intro">Ya tengo una cuenta</string>
+    <string name="et_email_login">Ingresa tu correo</string>
+    <string name="et_pass_login">Ingresa tu contraseña</string>
+    <string name="et_confpass_login">Confirma tu contraseña</string>
+    <string name="intro_pregunta">¿Con que tipo de usuario te identificas?</string>
+    <string name="soycomprador">Soy comprador</string>
+    <string name="soyagricultor">Soy Agricultor</string>
+
+
+    <string name="et_number">Ingresa tu número de celular</string>
+    <string name="et_date">Ingresa tu fecha de nacimiento</string>
+
+    <string name="et_name">Ingresa tu nombre</string>
+    <string name="et_DNI">Ingresa tu DNI</string>
+    <string name="et_apellido">Ingresa tu apellido</string>
+    <string name="et_direccion">Ingresa tu dirección</string>
+
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Crear cuenta</string>
+
+    <string name="fb">Facebook</string>
+    <string name="google">Google</string>
+    <string name="concorreo">O inicia sesión con tu correo</string>
+    <string name="regconcorreo">O regístrate con tu correo</string>
+
+    <string name="sincuenta">¿No tienes cuenta? Regístrate</string>
+    <string name="concuenta">¿Ya tienes cuenta? Inicia Sesión</string>
+
+    <string name="loginconrrss">Inicia sesión en un sólo paso</string>
+    <string name="registerconrrss">Crea tu cuenta en un sólo paso</string>
+
+    <string name="home">HOME</string>
+    <string name="agricultor">SOY AGRICULTOR</string>
+    <string name="comprador">SOY COMPRADOR</string>
+    <string name="ataddproduct">Regresar</string>
+    <string name="titleaddproduct">Agregar producto</string>
+    <string name="subtitleaddproduct">Rellena todos los campos</string>
+
+
+    <string name="et_productName">Ingresa el nombre del producto</string>
+    <string name="et_productPrice">Ingresa el precio del producto</string>
+    <string name="et_productStock">Ingresa el stock del producto</string>
+    <string name="et_productDescrip">Ingresa la descripción del producto</string>
+    <string name="btn_AddProduct">Agregar Producto</string>
+    <string name="btnChoosePhotos">Agregar fotos del producto</string>
+    <string name="a_adir_cantidad_de_stock">Añadir cantidad de stock</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
