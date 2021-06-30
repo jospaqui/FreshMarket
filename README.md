@@ -7,3 +7,9 @@ FreshMarket es una aplicación que sirve de intermediario entre el agricultor y 
 - 
 ### Usuario
 - Comprar xD
+
+# Team FreshMarket
+- SOL MILAGROS CHOQUE CHARA
+- RUE GERMÁN CCARITA JARA
+- PATRICK DENNIS CAIRE TORRES
+- PAQUIYAURI MARCAS JOSE LUIS
